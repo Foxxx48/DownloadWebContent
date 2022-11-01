@@ -14,6 +14,9 @@ class DisplayUrlActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityDisplayUrlBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar?.hide()
+
         binding.tvDisplay.text = intent.getStringExtra(EXTRA)
     }
 
